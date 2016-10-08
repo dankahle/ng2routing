@@ -1,0 +1,11 @@
+
+
+$padding: 10px;
+
+[routerLink]:not(:first-child) {
+  margin-left: $padding;
+}
+
+[routerLink].active {
+  background-color: plum;
+}
