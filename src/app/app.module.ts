@@ -6,6 +6,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
+import { AdminModule }            from './admin/admin.module';
+import { AuthGuard } from './auth-guard.service';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +20,12 @@ import { HeroesModule } from './heroes/heroes.module';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    HeroesModule
+    HeroesModule,
+    CrisisCenterModule,
+    AdminModule,
+    LoginModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
