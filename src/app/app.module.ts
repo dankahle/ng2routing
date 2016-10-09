@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { CrisisCenterModule } from './crisis-center/crisis-center.module';
-import { AdminModule }            from './admin/admin.module';
 import { AuthGuard } from './auth-guard.service';
 import { LoginModule } from './login/login.module';
 
@@ -22,7 +21,6 @@ import { LoginModule } from './login/login.module';
     AppRoutingModule,
     HeroesModule,
     CrisisCenterModule,
-    AdminModule,
     LoginModule
   ],
   providers: [AuthGuard],

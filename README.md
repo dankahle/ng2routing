@@ -1,5 +1,12 @@
 # Ng2routing
 
+This is the ng2 doc's advanced routing tutorial. It's all working except their last section where they try to make admin load async. Not sure if it's a webpack thing or not, but for some reason it can't find the admin module, and this is using the exact same code their plunker is, so not sure what's going on. Just revert the last commit to make it all work. Everything else works, just that admin async load is all.
+
+
+
+
+# angular-cli stuff
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
 ## Development server
