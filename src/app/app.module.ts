@@ -9,6 +9,7 @@ import { HeroesModule } from './heroes/heroes.module';
 import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { AuthGuard } from './auth-guard.service';
 import { LoginModule } from './login/login.module';
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LoginModule } from './login/login.module';
     BrowserModule,
     FormsModule,
     HttpModule,
+    // CoreModule,
     AppRoutingModule,
     HeroesModule,
     CrisisCenterModule,
