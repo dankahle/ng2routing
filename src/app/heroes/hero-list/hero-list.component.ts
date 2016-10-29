@@ -17,7 +17,9 @@ export class HeroListComponent implements OnInit {
     private service: HeroService,
     private route: ActivatedRoute,
     private router: Router
-  ) {}
+  ) {
+      console.log('hero list const');
+  }
 
   ngOnInit() {
     this.route.params.forEach((params: Params) => {

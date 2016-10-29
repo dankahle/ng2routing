@@ -8,7 +8,9 @@ import {UserService} from "../../core/user.service";
 })
 export class AdminComponent implements OnInit {
 
-  constructor(userService:UserService) { }
+  constructor(userService:UserService) {
+    console.log('admin comp const');
+  }
 
   ngOnInit() {
   }

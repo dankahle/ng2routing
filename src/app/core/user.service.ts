@@ -1,12 +1,19 @@
-import { Injectable } from '@angular/core';
+import {Injectable, Optional} from '@angular/core';
+import {UserConfig} from "./user-config";
 
 @Injectable()
 export class UserService {
+  name = 'initial';
 
-  count = 0;
-
-  constructor() {
+  constructor(@Optional() config:UserConfig) {
     console.log('user service construction')
+    if (config) {
+      this.name = config.name;
+    }
+  }
+
+  getName() {
+    return this.name;
   }
 
 }

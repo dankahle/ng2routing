@@ -19,7 +19,9 @@ import {CoreModule} from "./core/core.module";
     BrowserModule,
     FormsModule,
     HttpModule,
-    // CoreModule,
+    CoreModule.forRoot({
+      name: 'dank'
+    }),
     AppRoutingModule,
     HeroesModule,
     CrisisCenterModule,

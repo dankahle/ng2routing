@@ -8,13 +8,18 @@ import { ManageHeroesComponent } from './manage-heroes/manage-heroes.component';
 
 import { adminRouting } from './admin.routing';
 import {UserService} from "../core/user.service";
+import {CoreModule} from "../core/core.module";
 
 @NgModule({
   imports: [
     CommonModule,
     adminRouting
   ],
-  declarations: [AdminDashboardComponent, AdminComponent, ManageCrisesComponent, ManageHeroesComponent],
-  providers: [UserService]
+  declarations: [AdminDashboardComponent, AdminComponent, ManageCrisesComponent, ManageHeroesComponent]
 })
-export class AdminModule { }
+export class AdminModule {
+
+  constructor() {
+    console.log('admin module const');
+  }
+}
